@@ -4,12 +4,12 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
-import java.util.TimeZone;
 
 public class DbConnectionHelper {
 
 	protected static String username = "sa";
 	protected static String password = "";
+	//Por defecto utiliza H2 en memoria, pero pódese sobrescribir co método setter 
 	protected static String databaseUrl = "jdbc:h2:mem:h2Demo";
 	
 	public static void setUsername(String username) {
